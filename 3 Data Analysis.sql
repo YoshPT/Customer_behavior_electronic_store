@@ -45,12 +45,12 @@ SELECT Payment_Method,Count(Payment_Method) as Total_Payment_Method
 FROM electronic_sales
 GROUP BY Payment_Method;
 
-# F. Total Quantity Sold by Shipping Type
+# G. Total Quantity Sold by Shipping Type
 SELECT Shipping_Type, SUM(Quantity) as Total_Quantity_Sold
 FROM electronic_sales
 GROUP BY Shipping_Type;
 
-# I. Product Category purchase by Gender
+# H. Product Category purchase by Gender
 SELECT Gender,Product_Type, SUM(Quantity) as  Total_Quantity_Sold
 FROM electronic_sales
 GROUP BY Gender,Product_Type 
